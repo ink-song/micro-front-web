@@ -1,0 +1,19 @@
+{
+  "name": "micro-front-web",
+  "version": "1.0.0",
+  "description": "micro-front-web",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ink-song/micro-front-web.git"
+  },
+  "author": "shaper",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ink-song/micro-front-web/issues"
+  },
+  "homepage": "https://github.com/ink-song/micro-front-web#readme"
+}
