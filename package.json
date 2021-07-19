@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/ink-song/micro-front-web/issues"
   },
-  "homepage": "https://github.com/ink-song/micro-front-web#readme"
+  "homepage": "https://github.com/ink-song/micro-front-web#readme",
+  "dependencies": {
+    "vue-router": "^3.5.2"
+  }
 }
