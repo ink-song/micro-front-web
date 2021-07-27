@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/ink-song/micro-front-web#readme",
   "dependencies": {
+    "vue-property-decorator": "^9.1.2",
     "vue-router": "^3.5.2"
   }
 }

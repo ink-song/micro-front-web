@@ -1,5 +1,5 @@
 import Home from '@/views/Home.vue'
-import VueRouter from 'vue-router'
+import { createRouter, createWebHashHistory } from 'vue-router'
 
 const routes = [
   {
@@ -9,7 +9,7 @@ const routes = [
   },
 ]
 
-export const router = new VueRouter({
-  mode: 'history',
+export const router = createRouter({
+  history: createWebHashHistory(),
   routes,
 })
