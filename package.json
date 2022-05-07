@@ -1,23 +1,61 @@
 {
-  "name": "micro-front-web",
-  "version": "1.0.0",
-  "description": "micro-front-web",
-  "main": "index.js",
+  "name": "micro-main",
+  "version": "0.1.0",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build",
+    "test:unit": "vue-cli-service test:unit",
+    "test:e2e": "vue-cli-service test:e2e",
+    "lint": "vue-cli-service lint",
+    "prepare": "husky install"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/ink-song/micro-front-web.git"
-  },
-  "author": "shaper",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/ink-song/micro-front-web/issues"
-  },
-  "homepage": "https://github.com/ink-song/micro-front-web#readme",
   "dependencies": {
-    "vue-property-decorator": "^9.1.2",
-    "vue-router": "^3.5.2"
+    "ant-design": "^1.0.0",
+    "ant-design-vue": "^3.2.2",
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@commitlint/config-conventional": "^16.2.4",
+    "@types/jest": "^24.0.19",
+    "@types/nprogress": "^0.2.0",
+    "@typescript-eslint/eslint-plugin": "^4.18.0",
+    "@typescript-eslint/parser": "^4.18.0",
+    "@vue/cli-plugin-babel": "~4.5.12",
+    "@vue/cli-plugin-e2e-cypress": "~4.5.12",
+    "@vue/cli-plugin-eslint": "~4.5.12",
+    "@vue/cli-plugin-typescript": "~4.5.12",
+    "@vue/cli-plugin-unit-jest": "~4.5.12",
+    "@vue/cli-service": "~4.5.12",
+    "@vue/compiler-sfc": "^3.0.0",
+    "@vue/eslint-config-prettier": "^6.0.0",
+    "@vue/eslint-config-typescript": "^7.0.0",
+    "@vue/test-utils": "^2.0.0-0",
+    "commitlint": "^16.2.4",
+    "eslint": "^6.7.2",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-vue": "^7.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.4.1",
+    "nprogress": "^0.2.0",
+    "pinst": "^3.0.0",
+    "prettier": "^2.2.1",
+    "qiankun": "^2.7.0",
+    "typescript": "~4.1.5",
+    "vue-jest": "^5.0.0-0",
+    "vue-router": "^4.0.14"
+  },
+  "gitHooks": {
+    "pre-commit": "lint-staged"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.{js,ts,vue}": "eslint --fix",
+    "*.{scss,css}": "prettier --write"
   }
 }
